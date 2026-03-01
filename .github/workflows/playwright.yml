@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install playwright
-          playwright install
+          playwright install --with-deps
 
       - name: Run Playwright Script - 22f3002388@ds.study.iitm.ac.in
         run: python scrape.py
